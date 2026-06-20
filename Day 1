@@ -1,0 +1,190 @@
+# 8-Bit Computer Architecture using Verilog HDL
+
+## Project Overview
+
+This project focuses on the design and implementation of a custom **8-Bit Computer Architecture** using **Verilog HDL**. The architecture is intended for FPGA implementation and consists of fundamental processor components such as registers, memory, ALU, control unit, instruction decoder, and input/output interfaces.
+
+The objective is to understand computer organization at the hardware level by designing and integrating all CPU modules from scratch.
+
+---
+
+## Objectives
+
+- Design an 8-bit computer architecture using Verilog HDL.
+- Implement individual processor modules.
+- Develop and verify RTL and Testbench code for each module.
+- Integrate all modules into a complete processor system.
+- Simulate and verify functionality before FPGA implementation.
+
+---
+
+## Instruction Set Architecture (ISA)
+
+| Instruction | Opcode |
+|------------|---------|
+| LDA | 0000 |
+| STA | 0001 |
+| ADD | 0010 |
+| SUB | 0011 |
+| AND | 0100 |
+| OR  | 0101 |
+| NOT | 0110 |
+| OUT | 0111 |
+
+---
+
+## Architecture Modules
+
+The processor consists of the following modules:
+
+1. Arithmetic Logic Unit (ALU)
+2. Accumulator (Register A)
+3. Register B
+4. Program Counter (PC)
+5. Memory Address Register (MAR)
+6. Instruction Register (IR)
+7. Memory Unit
+8. Control Unit
+9. Instruction Decoder
+10. Input Unit
+11. Output Unit
+12. Flag Register
+
+---
+
+## Architecture Block Diagram
+
+The architecture follows a basic CPU datapath structure consisting of:
+
+- Program Counter for instruction sequencing
+- Memory for instruction and data storage
+- Instruction Register for instruction holding
+- Control Unit for control signal generation
+- ALU for arithmetic and logical operations
+- Registers for temporary data storage
+- Input and Output interfaces for user interaction
+
+---
+
+# Development Progress
+
+## Day 1
+
+### Activities Completed
+
+### Understanding the Architecture
+- Studied the working principle of an 8-bit computer architecture.
+- Understood datapath and control path operations.
+- Learned how data moves between memory, registers, and processing units.
+
+### Module Planning
+Identified all required modules for implementation.
+
+### ISA Definition
+Defined the instruction set and corresponding opcodes.
+
+### Architecture Design
+- Designed the overall architecture.
+- Planned module interconnections.
+- Defined data flow and control signals.
+
+### RTL Development
+Implemented:
+- Register A (Accumulator)
+- Register B
+
+### Testbench Development
+Created and verified:
+- Register A Testbench
+- Register B Testbench
+
+### Outcome
+Successfully completed the architecture planning phase and verified the RTL functionality of Register A and Register B.
+
+---
+
+## Day 2
+
+### Modules Implemented and Verified
+
+### 1. Arithmetic Logic Unit (ALU)
+Supported operations:
+- ADD
+- SUB
+- AND
+- OR
+- NOT
+
+Verified through simulation.
+
+### 2. Program Counter (PC)
+- Implemented instruction sequencing.
+- Verified reset and increment operations.
+
+### 3. Memory Address Register (MAR)
+- Stores memory addresses.
+- Verified address loading functionality.
+
+### 4. Instruction Register (IR)
+- Holds fetched instructions.
+- Separates opcode and operand fields.
+
+### 5. Memory Unit
+- Supports read and write operations.
+- Verified using different addresses and data values.
+
+### 6. Control Unit
+- Generates control signals.
+- Coordinates CPU module operations.
+
+### 7. Instruction Decoder
+Implemented decoding for:
+- LDA
+- STA
+- ADD
+- SUB
+- AND
+- OR
+- NOT
+- OUT
+
+### 8. Input Unit
+- Accepts external user input.
+- Transfers data to the CPU through an Input Register.
+
+### 9. Output Unit
+- Displays processed results.
+- Supports output observation.
+
+### 10. Flag Register
+Implemented:
+- Zero Flag (Z)
+- Carry Flag (C)
+
+### Verification
+- Developed individual testbenches for all modules.
+- Verified functionality using simulations and waveform analysis.
+
+### Outcome
+All major CPU modules were successfully implemented and verified. The project is now ready for top-level integration.
+
+---
+
+## Tools Used
+
+- Verilog HDL
+- ModelSim / QuestaSim
+- FPGA Development Flow
+- Git & GitHub
+
+---
+
+## Future Work
+
+- Top-Level Integration
+- Bus Architecture Verification
+- Complete Instruction Execution Cycle
+- FPGA Implementation
+- Hardware Testing
+
+---
